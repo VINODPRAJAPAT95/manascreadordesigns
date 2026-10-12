@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply font-body bg-page text-ink antialiased; overflow-x: hidden; }
+h1, h2, h3, h4 { @apply font-heading; }
+.container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
